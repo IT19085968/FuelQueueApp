@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "awq4mz0inJSdUNiGJrswXwM8fIGjPk2H3RSIgDsFXlM=",
+  "Source": "fuelWebAPI",
+  "BasePath": "_content/fuelWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
