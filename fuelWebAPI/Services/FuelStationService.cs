@@ -9,7 +9,7 @@ namespace fuelWebAPI.Services
 
         public FuelStationService(IFuelStationDBSettings settings, IMongoClient mongoClient){
             var database = mongoClient.GetDatabase(settings.DatabaseName);
-            _fuelStation = database.GetCollection<FuelStation>(settings.CollectionName);
+            _fuelStation = database.GetCollection<FuelStation>("fuelStation");
         }
 
         public FuelStation Create(FuelStation fuelStation){

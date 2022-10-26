@@ -17,6 +17,7 @@ builder.Services.AddSingleton<IMongoClient>(s =>
 new MongoClient(builder.Configuration.GetValue<string>("FuelStationDBSettings:ConnectionString")));
 
 builder.Services.AddScoped<IFuelStationService, FuelStationService>();
+builder.Services.AddScoped<IFuelQueueService, FuelQueueService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

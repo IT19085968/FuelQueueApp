@@ -24,7 +24,7 @@ public class FuelStationController : ControllerBase
         var fuelStation = fuelService.Get(id);
         
         if(fuelStation == null){
-            return NotFound($"Student with Id = {id} not found");
+            return NotFound($"Fuel Station with Id = {id} not found");
         }
 
         return fuelStation;
@@ -44,7 +44,7 @@ public class FuelStationController : ControllerBase
         var fuelStationExist = fuelService.Get(id);
         
         if(fuelStationExist == null){
-            return NotFound($"Student with Id = {id} not found");
+            return NotFound($"Fuel Station with Id = {id} not found");
         }
 
         fuelService.Update(id, fuelStation);
@@ -58,12 +58,12 @@ public class FuelStationController : ControllerBase
         var fuelStationExist = fuelService.Get(id);
         
         if(fuelStationExist == null){
-            return NotFound($"Student with Id = {id} not found");
+            return NotFound($"Fuel Station with Id = {id} not found");
         }
 
         fuelService.Remove(fuelStationExist.StationId);
 
-        return Ok($"Student with Id = {id} deleted");
+        return Ok($"Fuel Station with Id = {id} deleted");
     }
 }
 }
